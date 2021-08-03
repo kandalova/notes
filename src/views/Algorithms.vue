@@ -1,22 +1,21 @@
 <template>
   <div>
-    <h1 v-text="header"></h1>
-    <div v-for="(list, idx) in listArray" :key="idx">
+    <h1 v-text="algorithmContent.header"></h1>
+    <div v-for="(list, idx) in algorithmContent.lists" :key="idx">
       <base-list :list-data="list"></base-list>
     </div>
   </div>
 </template>
 
 <script>
-import {GIT_CONTENT} from "../../constants";
+import {ALGORITHMS_CONTENT} from "../../constants";
 export default {
   components: {
     BaseList: () => import('@/components/BaseList')
   },
   data(){
     return{
-      listArray: GIT_CONTENT.lists,
-      header: GIT_CONTENT.header,
+      algorithmContent: ALGORITHMS_CONTENT
     }
   }
 }

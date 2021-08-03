@@ -24,7 +24,14 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Git.vue')
+    component: () => import(/* webpackChunkName: "git" */ '../views/Git.vue')
+  },  {
+    path: '/algorithms',
+    name: 'Algorithms',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "algorithms" */ '../views/Algorithms.vue')
   }
 ]
 
