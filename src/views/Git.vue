@@ -8,7 +8,8 @@
 </template>
 
 <script>
-import {GIT_CONTENT} from "../../constants";
+import {GIT_CONTENT} from "@/content/git_content";
+
 export default {
   components: {
     BaseList: () => import('@/components/BaseList')

@@ -8,7 +8,9 @@
 </template>
 
 <script>
-import {ALGORITHMS_CONTENT} from "../../constants";
+
+import {ALGORITHMS_CONTENT} from "@/content/algorithm_content";
+
 export default {
   components: {
     BaseList: () => import('@/components/BaseList')
